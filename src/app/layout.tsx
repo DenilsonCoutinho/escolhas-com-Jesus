@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { MetaPixel } from "@/components/MetaPixel";
+import { Clarity } from "@/components/Clarity";
 import { site } from "@/config/site";
 import "./globals.css";
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         {children}
         <MetaPixel />
+        <Clarity />
       </body>
     </html>
   );

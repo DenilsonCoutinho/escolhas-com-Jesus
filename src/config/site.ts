@@ -21,6 +21,9 @@ export const site = {
   // Pixel do Meta (Facebook/Instagram). Deixe vazio para desativar.
   metaPixelId: process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "",
 
+  // Microsoft Clarity (mapas de calor e gravações). Deixe vazio para desativar.
+  clarityId: process.env.NEXT_PUBLIC_CLARITY_ID || "zfs58511bw",
+
   // E-mail de suporte exibido no rodapé
   supportEmail: "contato@seudominio.com.br",
 

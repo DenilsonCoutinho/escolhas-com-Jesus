@@ -13,6 +13,7 @@ Abra `src/config/site.ts` e preencha:
 | `priceFrom` | Preço "de" riscado (opcional, deixe `""` para esconder) |
 | `installments` | Texto do parcelamento (opcional) |
 | `metaPixelId` | ID do Pixel do Meta (ou `NEXT_PUBLIC_META_PIXEL_ID`) |
+| `clarityId` | ID do projeto no Microsoft Clarity (ou `NEXT_PUBLIC_CLARITY_ID`) |
 | `supportEmail` | E-mail de suporte do rodapé |
 | `url` | Domínio final do site (usado nas prévias de link) |
 | `testimonials` | Depoimentos **reais** — a seção só aparece quando houver algum |
@@ -28,7 +29,7 @@ npm run dev      # http://localhost:3000
 
 ## Publicar
 
-**Vercel (recomendado):** importe o repositório, configure `NEXT_PUBLIC_CHECKOUT_URL` e `NEXT_PUBLIC_META_PIXEL_ID` em *Environment Variables* e faça o deploy.
+**Vercel (recomendado):** importe o repositório, configure `NEXT_PUBLIC_CHECKOUT_URL`, `NEXT_PUBLIC_META_PIXEL_ID` e `NEXT_PUBLIC_CLARITY_ID` em *Environment Variables* e faça o deploy.
 
 **Hospedagem estática (Hostinger, Netlify etc.):**
 
