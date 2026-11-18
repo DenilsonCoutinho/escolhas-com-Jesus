@@ -9,7 +9,7 @@ export const site = {
 
   // Link do checkout da Kiwify (Produto > Links > Checkout)
   checkoutUrl:
-    process.env.NEXT_PUBLIC_CHECKOUT_URL ?? "https://pay.kiwify.com.br/SEU-LINK-AQUI",
+    process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://pay.kiwify.com.br/TVxrIP6",
 
   // Preço exibido na oferta. Deixe priceFrom vazio ("") para não mostrar o "de/por".
   price: "10,00",
