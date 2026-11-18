@@ -12,8 +12,8 @@ export const site = {
     process.env.NEXT_PUBLIC_CHECKOUT_URL ?? "https://pay.kiwify.com.br/SEU-LINK-AQUI",
 
   // Preço exibido na oferta. Deixe priceFrom vazio ("") para não mostrar o "de/por".
-  price: "18,90", // TODO: defina o preço (ex.: "19,90")
-  priceFrom: "", // ex.: "47,00"
+  price: "10,00",
+  priceFrom: "97,00", // preço "de" riscado; "" para esconder
   installments: "", // ex.: "ou 3x de R$ 7,23" — deixe vazio para esconder
 
   guaranteeDays: 7,
