@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Paleta tirada do PDF "Escolhas com Jesus" */
+@theme inline {
+  --color-cream: #fff6e6;
+  --color-cream-2: #f6efdd;
+  --color-sand: #eae4d2;
+  --color-teal: #133e44;
+  --color-teal-dark: #0c363c;
+  --color-teal-back: #0a3e49;
+  --color-green: #486b48;
+  --color-terracotta: #a44c2b;
+  --color-terracotta-dark: #8c3f22;
+  --color-copper: #c6663c;
+  --color-sage: #bcc5a2;
+
+  --font-sans: var(--font-nunito);
+  --font-serif: var(--font-fraunces);
+  --font-display: var(--font-lilita);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-teal);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Rolagem horizontal infinita das 50 situações */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 60s linear infinite;
+}
+.marquee-reverse {
+  animation: marquee 70s linear infinite reverse;
+}
