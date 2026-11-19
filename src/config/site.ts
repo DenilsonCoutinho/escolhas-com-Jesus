@@ -19,7 +19,7 @@ export const site = {
   guaranteeDays: 7,
 
   // Pixel do Meta (Facebook/Instagram). Deixe vazio para desativar.
-  metaPixelId: process.env.NEXT_PUBLIC_META_PIXEL_ID || "2416978222043708",
+  metaPixelId: process.env.NEXT_PUBLIC_META_PIXEL_ID || "2172515843345711",
 
   // Microsoft Clarity (mapas de calor e gravações). Deixe vazio para desativar.
   clarityId: process.env.NEXT_PUBLIC_CLARITY_ID || "zfs58511bw",
