@@ -34,17 +34,34 @@ export function Hero() {
         <div>
           <div className="mb-5 flex items-center gap-3">
             <Leaf className="w-6" />
-            <Pill>Baralho de conversas em família</Pill>
+            <Pill>Baralho digital para imprimir</Pill>
           </div>
           <h1 className="font-display text-[2.6rem] uppercase leading-[0.98] text-teal sm:text-6xl lg:text-7xl">
-            Seu filho agiria como Jesus <span className="text-terracotta">se você não estivesse por perto?</span>
+            E agora,{" "}
+            <span className="block font-serif normal-case italic text-terracotta underline decoration-copper/70 decoration-4 underline-offset-8">o que Jesus faria?</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg font-semibold leading-relaxed text-teal/90 sm:text-xl">
-            <strong className="font-black">Escolhas com Jesus</strong> traz 50 situações reais do dia a dia (na escola, com os amigos,
-            no celular e em casa) para seu filho treinar o coração <em className="font-serif italic">antes</em> de agir.
+          <p className="mt-6 max-w-xl text-xl font-extrabold leading-snug text-teal sm:text-2xl">
+            50 situações do dia a dia para ajudar seu filho a{" "}
+            <strong className="rounded-full bg-sand px-2.5 py-0.5 font-black text-teal">pensar, escolher e agir</strong> à luz da Bíblia.
           </p>
+          <p className="mt-4 max-w-xl text-lg font-semibold leading-relaxed text-teal/90">
+            Em cada carta, a criança lê uma situação, escolhe entre duas opções e conversa com você a partir de um versículo e de uma
+            pergunta. Uma forma leve de levar os ensinamentos de Jesus para a vida real.
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-2">
+            {["50 cartas", "Versículo em cada carta", "Leia, Escolha, Converse"].map((c) => (
+              <li key={c} className="flex items-center gap-1.5 rounded-full border-2 border-teal/15 bg-white px-4 py-1.5 text-sm font-extrabold text-teal">
+                <IconCheck className="size-4 text-green" />
+                {c}
+              </li>
+            ))}
+          </ul>
           <div className="mt-8 flex flex-col items-start gap-4">
             <CtaButton>Liberar acesso agora</CtaButton>
+            <p className="flex items-center gap-1.5 text-sm font-extrabold text-teal">
+              <IconBolt className="size-4 text-terracotta" />
+              Pronto para imprimir em minutos
+            </p>
             <Trust />
           </div>
         </div>
